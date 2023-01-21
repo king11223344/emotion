@@ -60,7 +60,7 @@ def getmood():
         maxindex = int(np.argmax(prediction))
         predictions.append(emotion_dict[maxindex])
     return emotion_dict[maxindex]
-app.run()
+app.run(debug=True, port=8000, host='0.0.0.0')
 
 
         
